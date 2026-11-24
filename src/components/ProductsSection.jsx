@@ -189,7 +189,7 @@ export default function ProductsSection({ onSelectProductForQuote }) {
 
                 <div className="mt-2 text-[11px] font-mono text-slate-500 flex items-center justify-between border-t border-slate-200 pt-2">
                   <span>Modelo real fabricado por Eboplast</span>
-                  <span className="font-mono text-[#5b8314] font-bold">1 a 250 m³</span>
+                  <span className="font-mono text-[#5b8314] font-bold">1 a 300 m³</span>
                 </div>
               </div>
 

@@ -90,17 +90,72 @@ export default function Differentials() {
 
           </div>
 
-          {/* 3 Tank Interactive Columns */}
+          {/* 3 Tank Interactive Columns: Fabricante 1 | Nosotros (Eboplast) | Fabricante 2 */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
             
-            {/* 1. EBOPLAST (WINNER) */}
+            {/* 1. FABRICANTE 1 (Soldadura en techo y en fondo) */}
+            <div className="p-5 bg-slate-50 border border-slate-200 rounded-sm flex flex-col justify-between">
+              <div className="flex items-center justify-between mb-3">
+                <span className="text-xs font-mono font-bold uppercase px-2 py-0.5 bg-slate-200 text-slate-700 rounded-sm">
+                  FABRICANTE 1
+                </span>
+                <span className="text-[10px] font-mono font-bold text-rose-700 bg-rose-50 px-2 py-0.5 border border-rose-200">
+                  DOBLE COSTURA
+                </span>
+              </div>
+
+              {/* Interactive Visual Tank */}
+              <div className="relative mx-auto w-36 h-64 bg-slate-100 rounded-t-3xl rounded-b-sm border border-slate-300 flex flex-col justify-end overflow-hidden shadow-inner my-3">
+                
+                {/* Top Weld line */}
+                <div className="absolute top-3 inset-x-0 h-3 bg-rose-600 flex items-center justify-center z-20 shadow-sm">
+                  <span className="text-[8px] text-white font-mono font-bold uppercase tracking-tighter">
+                    Soldadura Superior
+                  </span>
+                </div>
+
+                {/* Liquid fill */}
+                <div 
+                  className={`w-full bg-gradient-to-t ${currentFluid.color} transition-all duration-300 relative`}
+                  style={{ height: `${liquidLevel}%` }}
+                >
+                  <div className="absolute top-0 inset-x-0 h-1 bg-white/30" />
+                </div>
+
+                {/* Bottom Weld line - DIRECT HIT BY MAX PRESSURE */}
+                <div className={`absolute bottom-0 inset-x-0 h-4 bg-rose-600 flex items-center justify-center z-20 shadow-sm ${liquidLevel > 50 ? 'animate-pulse' : ''}`}>
+                  <span className="text-[8px] text-white font-mono font-bold uppercase tracking-tighter">
+                    Unión Fondo/Cilindro ({bottomPressureKPa} kPa)
+                  </span>
+                </div>
+              </div>
+
+              {/* Stress Analysis Card */}
+              <div className="space-y-1.5 pt-3 border-t border-slate-200 text-xs font-mono">
+                <div className="flex justify-between items-center text-slate-600">
+                  <span>Presión en Unión Inferior:</span>
+                  <span className="text-rose-700 font-bold">{bottomPressureKPa} kPa</span>
+                </div>
+                <div className="flex justify-between items-center text-slate-600">
+                  <span>Riesgo de Fisura:</span>
+                  <span className="text-rose-700 font-bold">ALTO ({liquidLevel}%)</span>
+                </div>
+                <div className="p-2 bg-rose-50 border border-rose-200 text-[11px] text-rose-800 font-sans mt-2 flex items-start space-x-1.5">
+                  <AlertTriangle className="w-4 h-4 text-rose-600 shrink-0 mt-0.5" />
+                  <span>Posee soldadura en la unión fondo/cilindro, sometida a la máxima presión hidrostática y ataque químico.</span>
+                </div>
+              </div>
+
+            </div>
+
+            {/* 2. NOSOTROS / EBOPLAST (WINNER - SIN UNIÓN SOLDADA ENTRE FONDO Y CILINDRO) */}
             <div className="p-5 bg-lime-50/40 border-2 border-[#5b8314] shadow-sm rounded-sm flex flex-col justify-between">
               <div className="flex items-center justify-between mb-3">
                 <span className="text-xs font-mono font-black uppercase px-2 py-0.5 bg-[#5b8314] text-white rounded-sm">
-                  EBOPLAST S.A.
+                  NOSOTROS · EBOPLAST
                 </span>
                 <span className="text-[10px] font-mono font-bold text-[#5b8314] bg-white px-2 py-0.5 border border-lime-300">
-                  100% SEGURO
+                  CONTINUIDAD ÚNICA
                 </span>
               </div>
 
@@ -110,7 +165,7 @@ export default function Differentials() {
                 {/* Top Weld line - OUT OF LIQUID ZONE */}
                 <div className="absolute top-3 inset-x-0 h-3.5 bg-rose-600 flex items-center justify-center z-20 shadow-sm">
                   <span className="text-[8px] text-white font-mono font-bold uppercase tracking-tighter">
-                    Soldadura en Techo (0 kPa)
+                    Única Soldadura Superior (0 kPa)
                   </span>
                 </div>
 
@@ -127,7 +182,7 @@ export default function Differentials() {
 
                 {/* Bottom Base (Monolithic) */}
                 <div className="absolute bottom-0 inset-x-0 py-1 bg-emerald-600 border-t border-emerald-500 text-center text-[9px] font-mono font-bold text-white z-10">
-                  Base sin soldadura
+                  Sin unión soldada en fondo
                 </div>
               </div>
 
@@ -143,67 +198,17 @@ export default function Differentials() {
                 </div>
                 <div className="p-2 bg-emerald-50 border border-emerald-200 text-[11px] text-emerald-800 font-sans mt-2 flex items-start space-x-1.5">
                   <Check className="w-4 h-4 text-[#5b8314] shrink-0 mt-0.5" />
-                  <span>Sin soldadura entre fondo y cilindro: absorbe la presión hidrostática sin fatiga y disminuye el riesgo de ataque químico.</span>
+                  <span><strong>Sin unión soldada entre fondo y cilindro:</strong> continuidad constructiva única en el mercado que absorbe la presión sin fatiga y disminuye el riesgo de ataque químico.</span>
                 </div>
               </div>
 
             </div>
 
-            {/* 2. COMPETIDOR A (Weld in the middle) */}
+            {/* 3. FABRICANTE 2 (Soldadura en fondo) */}
             <div className="p-5 bg-slate-50 border border-slate-200 rounded-sm flex flex-col justify-between">
               <div className="flex items-center justify-between mb-3">
                 <span className="text-xs font-mono font-bold uppercase px-2 py-0.5 bg-slate-200 text-slate-700 rounded-sm">
-                  COMPETIDOR A
-                </span>
-                <span className="text-[10px] font-mono font-bold text-amber-700 bg-amber-50 px-2 py-0.5 border border-amber-200">
-                  RIESGO MEDIO
-                </span>
-              </div>
-
-              {/* Interactive Visual Tank */}
-              <div className="relative mx-auto w-36 h-64 bg-slate-100 rounded-t-3xl rounded-b-sm border border-slate-300 flex flex-col justify-end overflow-hidden shadow-inner my-3">
-                
-                {/* Middle Weld line */}
-                <div className="absolute top-1/2 -translate-y-1/2 inset-x-0 h-3.5 bg-amber-500 flex items-center justify-center z-20 shadow-sm">
-                  <span className="text-[8px] text-white font-mono font-bold uppercase tracking-tighter">
-                    Soldadura a Media Altura
-                  </span>
-                </div>
-
-                {/* Liquid fill */}
-                <div 
-                  className={`w-full bg-gradient-to-t ${currentFluid.color} transition-all duration-300 relative`}
-                  style={{ height: `${liquidLevel}%` }}
-                >
-                  <div className="absolute top-0 inset-x-0 h-1 bg-white/30" />
-                </div>
-              </div>
-
-              {/* Stress Analysis Card */}
-              <div className="space-y-1.5 pt-3 border-t border-slate-200 text-xs font-mono">
-                <div className="flex justify-between items-center text-slate-600">
-                  <span>Presión en Soldadura:</span>
-                  <span className="text-amber-700 font-bold">
-                    {liquidLevel > 50 ? `${(bottomPressureKPa * 0.5).toFixed(1)} kPa` : '0.0 kPa'}
-                  </span>
-                </div>
-                <div className="flex justify-between items-center text-slate-600">
-                  <span>Presión en Fondo:</span>
-                  <span className="text-slate-900 font-bold">{bottomPressureKPa} kPa</span>
-                </div>
-                <div className="p-2 bg-amber-50 border border-amber-200 text-[11px] text-amber-800 font-sans mt-2 flex items-start space-x-1.5">
-                  <AlertTriangle className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
-                  <span>La costura a media altura sufre flexión lateral con cargas cíclicas de llenado.</span>
-                </div>
-              </div>
-
-            </div>
-
-            {/* 3. COMPETIDOR B (Weld at the bottom) */}
-            <div className="p-5 bg-slate-50 border border-slate-200 rounded-sm flex flex-col justify-between">
-              <div className="flex items-center justify-between mb-3">
-                <span className="text-xs font-mono font-bold uppercase px-2 py-0.5 bg-slate-200 text-slate-700 rounded-sm">
-                  COMPETIDOR B
+                  FABRICANTE 2
                 </span>
                 <span className="text-[10px] font-mono font-bold text-rose-700 bg-rose-50 px-2 py-0.5 border border-rose-200">
                   FALLA CRÍTICA
@@ -232,7 +237,7 @@ export default function Differentials() {
               {/* Stress Analysis Card */}
               <div className="space-y-1.5 pt-3 border-t border-slate-200 text-xs font-mono">
                 <div className="flex justify-between items-center text-slate-600">
-                  <span>Presión en Soldadura:</span>
+                  <span>Presión en Unión Inferior:</span>
                   <span className="text-rose-700 font-bold">{bottomPressureKPa} kPa</span>
                 </div>
                 <div className="flex justify-between items-center text-slate-600">
@@ -241,7 +246,7 @@ export default function Differentials() {
                 </div>
                 <div className="p-2 bg-rose-50 border border-rose-200 text-[11px] text-rose-800 font-sans mt-2 flex items-start space-x-1.5">
                   <X className="w-4 h-4 text-rose-600 shrink-0 mt-0.5" />
-                  <span>La unión en la base soporta el 100% de la masa líquida, provocando delaminación y pérdidas.</span>
+                  <span>La unión soldada en la base soporta el 100% de la masa líquida, provocando delaminación y pérdidas.</span>
                 </div>
               </div>
 

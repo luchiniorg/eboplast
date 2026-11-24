@@ -7,17 +7,17 @@ export default function ServicesSection() {
   const values = [
     {
       title: "Comunicación",
-      desc: "Constante y efectiva entre todos los miembros de la empresa, proveedores y clientes. Nuestra política es trabajar siempre de puertas abiertas.",
+      desc: "Constante y efectiva entre los miembros que conformamos la empresa, genera un servicio de calidad para con nuestros proveedores y clientes. Nuestra política es siempre trabajar con nuestras puertas abiertas.",
       icon: <Building className="w-5 h-5 text-[#5b8314]" />
     },
     {
       title: "Confianza",
-      desc: "Realizamos cada proyecto con la mayor calidad y transparencia, reflejando nuestra trayectoria ininterrumpida desde 1978 en el mercado industrial.",
+      desc: "Realizamos nuestros proyectos con calidad y transparencia; volcando nuestra experiencia de hace más de 40 años en el mercado, con la finalidad de satisfacer a cada uno de nuestros clientes. Confiabilidad comprobada en el tiempo: tener casi 50 años de trayectoria (desde 1978) proveyendo a empresas líderes demuestra que los equipos instalados duran y cumplen lo que prometen.",
       icon: <HeartHandshake className="w-5 h-5 text-[#5b8314]" />
     },
     {
       title: "Compromiso",
-      desc: "Con nuestros clientes, brindando productos duraderos; con nuestro personal y sus familias, y con el medio ambiente cumpliendo estrictas normas ecológicas.",
+      desc: "Con nuestros clientes, proporcionándoles servicios de calidad; con la sociedad, al brindar estabilidad a las familias de nuestro personal; y con el medio ambiente, al respetar y cumplir todas las normas establecidas para el cuidado de éste.",
       icon: <Users className="w-5 h-5 text-[#5b8314]" />
     }
   ];
@@ -81,6 +81,29 @@ export default function ServicesSection() {
             </Link>
           </div>
 
+        </div>
+
+        {/* Historia Institucional */}
+        <div className="p-8 sm:p-10 bg-white border border-slate-200 rounded-sm shadow-sm mb-10">
+          <div className="max-w-4xl mx-auto space-y-4">
+            <span className="text-xs font-mono font-bold text-[#5b8314] uppercase tracking-wider block">
+              Historia · Desde 1978
+            </span>
+            <h3 className="font-display text-2xl sm:text-3xl font-extrabold text-slate-950">
+              Más de cuatro décadas liderando la ingeniería en PRFV
+            </h3>
+            <div className="space-y-3 text-sm sm:text-base text-slate-600 leading-relaxed font-sans">
+              <p>
+                Nuestra historia comenzó en <strong className="text-slate-900">1978</strong>, impulsada por el desafío de cubrir una demanda específica en el sector industrial. En ese entonces, <strong className="text-slate-900">Ebonit S.A.</strong>, empresa líder en el mercado de equipos metálicos anticorrosivos desde el año 1955, decidió crear una división especializada en la provisión de equipamiento en Plástico Reforzado con Fibra de Vidrio (PRFV).
+              </p>
+              <p>
+                Al detectar las limitaciones de los termoplásticos tradicionales en cuanto a resistencia mecánica, seguridad y facilidad de transformación, apostamos por el PRFV poniendo el foco en la <strong className="text-slate-900">ingeniería aplicada</strong>. Frente a la falta de tecnología disponible por ese entonces en el medio local, tomamos la decisión estratégica de desarrollar nuestro propio <em>know-how</em>. Este camino nos llevó a diseñar y fabricar nuestra propia maquinaria y matricería, consolidando una capacidad productiva autónoma y a medida.
+              </p>
+              <p>
+                La solidez de estas decisiones, sumada a un esfuerzo sostenido, nos permitió posicionarnos rápidamente como proveedores de confianza para compañías de primer nivel. Gracias a una estructura ágil y dinámica, y a nuestra constante actualización bajo estándares y técnicas internacionales, logramos un crecimiento continuo que hoy nos ubica en un lugar de privilegio dentro del mercado anticorrosivo.
+              </p>
+            </div>
+          </div>
         </div>
 
         {/* Corporate Values Strip */}

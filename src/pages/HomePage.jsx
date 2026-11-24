@@ -298,7 +298,7 @@ export default function HomePage() {
                 index="04"
                 kicker="Líneas de Fabricación en PRFV"
                 title="Catálogo de Tanques y Postes"
-                intro="Matricería propia de hasta 4.700 mm de diámetro y capacidades unitarias de hasta 250.000 litros bajo normas ASTM, BS, ASME, NBS, IRAM y CIRSOC."
+                intro="Matricería desarrollada con ingeniería propia, hasta un diámetro de 4.700 mm para fabricar contenedores de hasta 300.000 litros bajo normas internacionales."
               />
               <Link
                 to="/productos"
@@ -398,7 +398,7 @@ export default function HomePage() {
                 ¿Tiene un proyecto industrial o requerimiento especial?
               </h2>
               <p className="text-sm sm:text-base leading-relaxed text-white/70 font-sans">
-                Nuestro departamento de ingeniería realiza el cálculo de espesores según fluido, trabaja con normas ASTM, BS, ASME, NBS, IRAM y CIRSOC (o cualquier otra norma o reglamento previo estudio) y gestiona la logística con izaje en destino.
+                Nuestro departamento de ingeniería realiza el cálculo de espesores según fluido, trabaja con normas ASTM, BS, ASME, NBS, IRAM y CIRSOC (o cualquier otra norma o reglamento previo estudio) y facilita la logística de despacho con carga y acondicionamiento sin cargo adicional.
               </p>
             </div>
 

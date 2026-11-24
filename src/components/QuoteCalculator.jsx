@@ -432,7 +432,7 @@ export default function QuoteCalculator({ preselectedProduct }) {
                     <input
                       type="range"
                       min="1000"
-                      max="250000"
+                      max="300000"
                       step="1000"
                       value={capacityLiters}
                       onChange={(e) => setCapacityLiters(Number(e.target.value))}
@@ -441,8 +441,8 @@ export default function QuoteCalculator({ preselectedProduct }) {
                     <div className="flex justify-between text-[11px] text-slate-400 font-mono">
                       <span>1.000 L (1 m³)</span>
                       <span>50.000 L</span>
-                      <span>100.000 L</span>
-                      <span>250.000 L (250 m³)</span>
+                      <span>150.000 L</span>
+                      <span>300.000 L (300 m³)</span>
                     </div>
                   </div>
 

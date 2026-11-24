@@ -22,7 +22,7 @@ export default function ServicesPage() {
                 Servicios de Fabricación, Montaje y Garantía
               </h1>
               <p className="text-steel-600 text-base sm:text-lg font-sans leading-relaxed">
-                Desde el asesoramiento inicial y cálculo de espesores hasta el traslado en carretones propios, izaje especializado y puesta en marcha en cualquier punto de Argentina.
+                Desde el asesoramiento inicial y cálculo de espesores hasta la coordinación de logística de despacho con carga y acondicionamiento sin cargo adicional en planta.
               </p>
             </div>
           </Reveal>

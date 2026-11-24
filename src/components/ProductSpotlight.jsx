@@ -129,7 +129,7 @@ export default function ProductSpotlight() {
                   <div className="p-3.5 flex items-start space-x-3">
                     <Flame className="w-4 h-4 text-rose-600 shrink-0 mt-0.5" />
                     <div>
-                      <span className="font-bold text-slate-900 block text-sm">Capacidad de 2.500 a 250.000 L</span>
+                      <span className="font-bold text-slate-900 block text-sm">Capacidad de 2.500 a 300.000 L</span>
                       <span className="text-slate-600 text-xs block mt-0.5">Volúmenes adaptados a la reserva hídrica requerida por cálculo de carga de fuego.</span>
                     </div>
                   </div>

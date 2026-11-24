@@ -21,7 +21,7 @@ export default function ProductsPage() {
                 Líneas de Tanques y Postes en PRFV
               </h1>
               <p className="text-steel-600 text-base sm:text-lg font-sans leading-relaxed">
-                Equipos de alta prestación química y mecánica desde 1.000 L hasta 250.000 L para la agroindustria, química pesada, minería, industria láctea y servicios públicos.
+                Equipos de alta prestación química y mecánica desde 1.000 L hasta 300.000 L para la agroindustria, química pesada, minería, industria láctea y servicios públicos.
               </p>
             </div>
           </Reveal>

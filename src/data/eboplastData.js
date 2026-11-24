@@ -1,9 +1,9 @@
 export const companyInfo = {
   name: "Eboplast S.A.",
   tagline: "Ingeniería en Soluciones de PRFV",
-  yearsExperience: "45+",
+  yearsExperience: "Desde 1978",
   foundedYear: "1978",
-  maxCapacity: "250.000 L",
+  maxCapacity: "300.000 L",
   standard: "Normas ASTM, BS, ASME, NBS, IRAM, CIRSOC",
   warranty: "1 año por escrito",
   location: {
@@ -36,9 +36,9 @@ export const companyInfo = {
 export const differentialFeatures = [
   {
     id: "soldadura",
-    title: "Soldadura Superior Exclusiva",
-    shortDesc: "Sin soldadura entre fondo y cilindro: menor riesgo de ataque químico y máxima seguridad",
-    fullDesc: "A diferencia de los tanques tradicionales que poseen uniones soldadas en la base o parte media (zonas con máxima presión hidrostática y riesgo de fractura), Eboplast fabrica el fondo y cilindro en una sola pieza continua mediante Filament Winding. Al no haber soldadura entre fondo y cilindro, se disminuye también el riesgo de ataque químico y se garantiza 0% de fatiga en la base.",
+    title: "Soldadura Superior",
+    shortDesc: "Eliminación de la soldadura fondo/cilindro: continuidad constructiva única en el mercado",
+    fullDesc: "Nuestra experiencia nos ha colocado en un escalón superlativo, capitalizando la misma en el mejoramiento de las técnicas de fabricación. Prueba de ello es la mejora en el armado de nuestros tanques con la eliminación de la soldadura fondo/cilindro, lo que permite una continuidad constructiva única en el mercado y disminuye el riesgo de ataque químico.",
     icon: "/assets/soldar.png",
     badge: "Exclusivo Eboplast"
   },
@@ -52,35 +52,35 @@ export const differentialFeatures = [
   },
   {
     id: "matriz",
-    title: "La Mayor Matriz del Mercado",
-    shortDesc: "Capacidades estándar y a medida desde 1.000 L hasta 250.000 L",
-    fullDesc: "Contamos con la infraestructura y matricería más grande de la región, lo que nos permite ofrecer una variedad dimensional inigualable tanto en formatos cilíndricos verticales como horizontales y diseños especiales a medida.",
+    title: "Matricería Propia",
+    shortDesc: "Hasta Ø 4.700 mm y contenedores de hasta 300.000 litros de capacidad",
+    fullDesc: "Desarrollada con ingeniería propia, hasta un diámetro de 4.700 mm lo que nos permite fabricar contenedores hasta 300.000 litros de capacidad. Amparada en normas internacionales, nos permite satisfacer los requerimientos del mercado.",
     icon: "/assets/matriz.png",
-    badge: "Capacidad Líder"
+    badge: "Hasta 300.000 L"
   },
   {
     id: "trayectoria",
-    title: "Trayectoria y Respaldo desde 1978",
-    shortDesc: "Fundada en 1978, con experiencia probada en las industrias líderes del país",
-    fullDesc: "Desde nuestra fundación en 1978, nuestros equipos operan ininterrumpidamente en las principales plantas químicas, alimenticias, agropecuarias e instituciones públicas de Argentina con garantía de calidad certificada.",
+    title: "Trayectoria y Confianza",
+    shortDesc: "Desde 1978 en el mercado confían en nosotros las principales empresas del país",
+    fullDesc: "Desde 1978 en el mercado confían en nosotros las principales empresas del país. Nuestros equipos operan ininterrumpidamente en las principales plantas químicas, alimenticias, agropecuarias e instituciones públicas de Argentina con garantía de calidad por escrito.",
     icon: "/assets/trayectoria.png",
     badge: "Desde 1978"
   },
   {
     id: "optimizacion",
-    title: "Optimización de Costos & Proyectos",
-    shortDesc: "Eficiencia en material, transporte ágil y mínimo costo de montaje",
-    fullDesc: "Ingeniería adaptada a los requerimientos específicos de cada cliente para maximizar la vida útil, reducir mermas y eliminar costos de mantenimiento preventivo como pintura o tratamientos anticorrosivos.",
+    title: "Optimización",
+    shortDesc: "Un cliente, un desafío: la mejor opción costo-beneficio para cada caso",
+    fullDesc: "Un cliente, un desafío. Ofrecemos siempre la mejor opción costo beneficio, estudiamos y proponemos la mejor alternativa para cada caso.",
     icon: "/assets/optimizacion.png",
-    badge: "Alta Eficiencia"
+    badge: "A Medida"
   },
   {
     id: "cobertura",
-    title: "Entrega y Montaje Nacional",
-    shortDesc: "Instalación en cualquier punto de Argentina con personal propio",
-    fullDesc: "Brindamos asistencia técnica, transporte especializado y montaje completo in situ de torres y tanques cumpliendo rigurosas normas de seguridad industrial y CIRSOC.",
+    title: "Logística de Despacho",
+    shortDesc: "Coordinación con su transporte o transportistas idóneos, con carga y acondicionamiento sin cargo",
+    fullDesc: "Podemos facilitar la logística de despacho, coordinando con su transporte o brindando opciones con transportistas idóneos en el traslado de este tipo constructivo. La carga y acondicionamiento sin cargo adicional se incluyen con la provisión.",
     icon: "/assets/entrega.png",
-    badge: "Cobertura Total"
+    badge: "Todo el País"
   }
 ];
 
@@ -132,7 +132,7 @@ export const productCategories = [
     image: "/assets/prod.png",
     accentColor: "emerald",
     features: [
-      "Capacidades desde 1.000 hasta 200.000 litros",
+      "Capacidades desde 1.000 hasta 300.000 litros",
       "Resinas viniléster, isoftálicas y otras según la compatibilidad del fluido",
       "Sin soldadura entre fondo y cilindro: disminuye el riesgo de ataque químico y fatiga en la base",
       "Modelos verticales y horizontales con o sin cunas de apoyo de PRFV"
@@ -286,7 +286,7 @@ export const productCategories = [
     image: "/assets/phone_4.png",
     accentColor: "rose",
     features: [
-      "Capacidades desde 2.500 L hasta 250.000 Litros",
+      "Capacidades desde 2.500 L hasta 300.000 Litros",
       "4.4 veces más liviano que tanques de chapa de acero",
       "Vida útil superior a 20 años en condiciones de intemperie severa",
       "Protección contra degradación por rayos UV y cambios bruscos de temperatura"
@@ -340,8 +340,8 @@ export const servicesList = [
     icon: "/assets/financiacion.png"
   },
   {
-    title: "Entrega y Montaje Nacional",
-    description: "Logística especializada propia y cuadrilla técnica para armado y puesta en marcha de torres y tanques en todo el territorio argentino.",
+    title: "Logística de Despacho",
+    description: "Podemos facilitar la logística de despacho, coordinando con su transporte o brindando opciones con transportistas idóneos en el traslado de este tipo constructivo. La carga y acondicionamiento sin cargo adicional se incluyen con la provisión.",
     icon: "/assets/entrega.png"
   },
   {
@@ -375,11 +375,11 @@ export const faqs = [
     answer: "Podemos almacenar una amplísima gama de productos: fertilizantes líquidos (UAN, SolMix, tiosulfato), ácidos (clorhídrico, sulfúrico, nítrico diluido, fosfórico), soda cáustica, salmueras, hidrocarburos, agroquímicos, leche y suero alimenticio, agua potable, efluentes industriales y agua para redes de incendio. En cada caso seleccionamos la resina óptima (viniléster, isoftálicas y otras)."
   },
   {
-    question: "¿Hacen envíos y montajes al interior de Argentina?",
-    answer: "Sí, realizamos entregas y montajes completos en todas las provincias de Argentina. Contamos con experiencia en instalación de tanques elevados, torres metálicas normalizadas y baterías de tanques para industrias y municipios."
+    question: "¿Cómo coordinan el despacho y traslado al interior de Argentina?",
+    answer: "Podemos facilitar la logística de despacho a todo el país, coordinando con su transporte o brindando opciones con transportistas idóneos en el traslado de este tipo constructivo. La carga y el acondicionamiento en planta sin cargo adicional se incluyen con la provisión."
   },
   {
     question: "¿Bajo qué normas se fabrican y qué garantía tienen los productos?",
-    answer: "Todos nuestros productos cuentan con garantía de calidad por escrito de 1 año. Aparte de las normas ASTM, trabajamos con BS, ASME, NBS, IRAM y CIRSOC; y previo estudio técnico podemos trabajar con cualquier otra norma o reglamento requerido por el proyecto."
+    answer: "Todos nuestros productos cuentan con garantía de calidad por escrito de 1 (un) año a partir de la fecha de entrega, que cubre defectos de fabricación y materiales, siempre que el equipo se utilice de acuerdo a las condiciones de servicio informadas al momento de la compra. Más allá del período de garantía, la vida útil de un equipo de PRFV correctamente especificado y operado supera ampliamente los 20 años. Fabricamos bajo normas internacionales como ASTM D 3299 (tanques por filament winding), CIRSOC (torres de tanques para agua), BS, ASME, NBS e IRAM; y previo estudio técnico podemos trabajar bajo cualquier otra norma o reglamento requerido por el proyecto."
   }
 ];

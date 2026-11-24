@@ -22,9 +22,9 @@ const galleryItems = {
   },
   transporte: {
     src: '/assets/camion.png',
-    title: 'Transporte y Carretones Propios',
-    badge: 'Logística Nacional',
-    desc: 'Traslado seguro y descarga con cuadrilla de izaje en obra',
+    title: 'Logística de Despacho Nacional',
+    badge: 'Carga Incluida',
+    desc: 'Coordinación con su transporte o transportistas idóneos · Carga y acondicionamiento sin cargo',
     fit: 'object-contain'
   },
   isotanque: {
@@ -78,7 +78,7 @@ export default function Hero() {
                 </div>
                 <div className="p-4">
                   <span className="text-[11px] text-steel-500 uppercase tracking-wider block">Capacidad Unitaria</span>
-                  <span className="text-ink font-extrabold text-sm block mt-1">Hasta 250.000 L</span>
+                  <span className="text-ink font-extrabold text-sm block mt-1">Hasta 300.000 L</span>
                   <span className="text-steel-500 text-[11px] block mt-0.5">Ø hasta 4.700 mm</span>
                 </div>
                 <div className="p-4">
@@ -110,7 +110,7 @@ export default function Hero() {
 
             <div className="text-xs text-steel-500 flex items-center gap-2 pt-1 font-mono">
               <ShieldCheck className="size-4 text-brand shrink-0" />
-              <span>Logística propia con carretones y cuadrilla de montaje en todo el país.</span>
+              <span>Logística de despacho a todo el país · Carga y acondicionamiento sin cargo adicional.</span>
             </div>
 
           </div>
@@ -177,13 +177,13 @@ export default function Hero() {
             <div className="border-l-2 border-ink pl-4">
               <span className="text-[11px] text-steel-500 uppercase tracking-wider block">Trayectoria Fabril</span>
               <span className="text-2xl sm:text-3xl font-black text-ink block mt-1 tracking-tight">DESDE 1978</span>
-              <span className="text-xs text-steel-500 font-sans">Fundada en 1978 en Rosario</span>
+              <span className="text-xs text-steel-500 font-sans">Confían las principales empresas del país</span>
             </div>
 
             <div className="border-l-2 border-brand pl-4">
               <span className="text-[11px] text-steel-500 uppercase tracking-wider block">Capacidad Unitaria</span>
-              <span className="text-2xl sm:text-3xl font-black text-ink block mt-1 tracking-tight">250.000 L</span>
-              <span className="text-xs text-steel-500 font-sans">250 m³ por cilindro</span>
+              <span className="text-2xl sm:text-3xl font-black text-ink block mt-1 tracking-tight">300.000 L</span>
+              <span className="text-xs text-steel-500 font-sans">Hasta 300 m³ · Ø hasta 4.700 mm</span>
             </div>
 
             <div className="border-l-2 border-line-strong pl-4">
